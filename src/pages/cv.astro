@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Frontend Developer, Neho"
+      subtitle="Dec 2021 - Present at Neho, Switzerland"
+    >
+      <strong>Modern Swiss real-estate company.</strong>
+      <br/>
+      <strong>Technologies used:</strong> Laravel, React, JavaScript, PHP, Redux, GraphQL, HTML, CSS, jQuery, Bootstrap.
+      <ul class="list-disc ps-4 leading-relaxed mb-4">
+        <li>Collaborated with a medium-sized team to develop a new design system and rebrand the client interface.</li>
+        <li>Drove performance enhancements, SEO optimization, and overall design and structure improvements.</li>
+        <li>Implemented a modular approach to optimize the codebase, leading to enhanced developer experience and improved performance metrics.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Collaborative School Project, Endava"
+      subtitle="2023 at West University of Timisoara, Romania"
+    >
+      <strong>Stock application development in collaboration with Endava.</strong>
+      <br/>
+      <strong>Technologies used:</strong> Angular, Spring, Java, TypeScript, Material UI.
+      <ul class="list-disc ps-4 leading-relaxed mb-4">
+        <li>Participated in a collaborative project between the university and Endava to develop a stock application.</li>
+        <li>Utilized Angular for the frontend development, creating a responsive and interactive user interface.</li>
+        <li>Implemented backend functionality using Spring Java, ensuring robust data management and API integration.</li>
+        <li>Gained practical experience in industry-standard development practices and teamwork in a professional setting.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Web Developer"
+      subtitle="From 2018 to 2021, Remote"
+    >
+      <strong>Independent web development projects for various clients.</strong>
+      <br/>
+      <strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP.
+      <ul class="list-disc ps-4 leading-relaxed mb-4">
+        <li>Designed and developed custom websites for friends, family, and small local businesses.</li>
+        <li>Managed all aspects of web development projects, from initial client consultations to final deployment.</li>
+        <li>Created responsive and user-friendly interfaces tailored to each client's specific needs and brand identity.</li>
+        <li>Provided ongoing maintenance and support for completed websites.</li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Master's Degree -- Artificial Intelligence and Distributed Computing"
+      subtitle="2024 to 2026 @ West University of Timisoara"
+    />
+    <TimeLineElement
+      title="Bachelor's Degree -- Computer Science"
+      subtitle="2021 to 2024 @ West University of Timisoara"
+    />
+    <TimeLineElement
+      title="High School Diploma -- Mathematics and Computer Science"
+      subtitle="2017 to 2021 @ Colegiul National Moise Nicoara, Arad"
+    />
+  </div>
+</BaseLayout>

@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const contactItems = [
+  {
+    title: "Email",
+    url: "mailto:dobondiwork@gmail.com",
+    icon: "email",
+    showUrl: "dobondiwork@gmail.com",
+  },
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/daviddobondi/",
+    icon: "linkedin",
+    showUrl: "https://www.linkedin.com/in/daviddobondi/",
+  },
+  {
+    title: "GitHub",
+    url: "https://github.com/DobondiUVT",
+    icon: "github",
+    showUrl: "https://github.com/DobondiUVT",
+  },
+  {
+    title: "GitHub (Secondary)",
+    url: "https://github.com/dobondi",
+    icon: "github",
+    showUrl: "https://github.com/dobondi",
+  },
+  {
+    title: "Phone",
+    url: "tel:+40726869685",
+    icon: "phone",
+    showUrl: "+40726869685",
+  },
+];
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Contact</div>
+  </div>
+
+  <ul class="list-disc list-inside space-y-4">
+    {
+      contactItems.map((item) => (
+        <li>
+          <strong>{item.title}:</strong>
+          <a href={item.url} class="text-blue-600 hover:text-blue-800">
+            {item.showUrl}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
